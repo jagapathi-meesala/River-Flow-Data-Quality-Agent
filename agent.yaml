@@ -1,0 +1,22 @@
+spec_version: "0.1.0"
+name: river-flow-data-quality-agent
+version: "1.0.0"
+description: Validates river-flow observations for completeness, plausibility, timestamp issues, and potential anomalies with evidence-based review flags.
+author: jagapathi-meesala
+license: MIT
+skills:
+  - river-flow-validation
+  - hydrological-anomaly-review
+  - data-quality-reporting
+tools:
+  - validate-flow-observations
+  - detect-flow-anomalies
+  - build-quality-report
+runtime:
+  max_turns: 5
+  temperature: 0.2
+  timeout: 30
+tags:
+  - hydrology
+  - data-quality
+  - river-monitoring

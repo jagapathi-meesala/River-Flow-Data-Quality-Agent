@@ -1,0 +1,8 @@
+name: build-quality-report
+description: Summarize validation findings with evidence, severity counts, and limitations.
+input_schema:
+  type: object
+  properties:
+    observations: {type: array, items: {type: object}}
+  required: [observations]
+  additionalProperties: true

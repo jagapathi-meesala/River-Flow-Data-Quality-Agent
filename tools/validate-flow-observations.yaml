@@ -1,0 +1,12 @@
+name: validate-flow-observations
+description: Validate required fields, timestamps, numeric flow values, duplicate station-time keys, and configured bounds.
+input_schema:
+  type: object
+  properties:
+    observations:
+      type: array
+      items: {type: object}
+    min_flow: {type: number}
+    max_flow: {type: number}
+  required: [observations]
+  additionalProperties: true

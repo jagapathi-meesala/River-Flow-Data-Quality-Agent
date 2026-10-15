@@ -1,0 +1,9 @@
+name: detect-flow-anomalies
+description: Flag large adjacent flow changes per station using an explicitly configured absolute threshold.
+input_schema:
+  type: object
+  properties:
+    observations: {type: array, items: {type: object}}
+    max_step_change: {type: number, minimum: 0}
+  required: [observations]
+  additionalProperties: true
